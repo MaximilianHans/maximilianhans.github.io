@@ -4,8 +4,10 @@
 }
 
 body {
+  background-colour: black;
   font-size: 1em;
   font-family: "Calluna", sans-serif;
+  font-color: white;
 }
 
 h1 {
