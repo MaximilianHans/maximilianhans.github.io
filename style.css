@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "COMIC";
-  src: url(fonts/COMIC.ttf) format("truetype");
+  font-family: "Calluna";
+  src: url(fonts/calluna-regular.ttf) format("truetype");
 }
 
 body {
   background: #212121;
   font-size: 1em;
-  font-family: "COMIC", sans-serif;
+  font-family: "Calluna", sans-serif;
   font-weight: lighter;
   color: white;
 }
