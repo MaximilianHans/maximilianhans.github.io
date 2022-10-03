@@ -3,7 +3,7 @@
   src: url(fonts/calluna-regular.ttf) format("truetype");
 }
 
-body {
+h1,h2,p {
   font-size: 6em;
   font-family: "Calluna", sans-serif;
   font-weight: bold;
