@@ -9,8 +9,8 @@ body {
   font-family: "Calluna", sans-serif;
   font-weight: lighter;
   color: white;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1 {
