@@ -4,8 +4,12 @@
 }
 
 body {
-  font-size: 6em;
+  font-size: 1em;
   font-family: "Calluna", sans-serif;
   font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
 }
 
