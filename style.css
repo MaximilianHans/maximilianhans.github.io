@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "ComicSansMS3";
-  src: url(fonts/ComicSansMS3.ttf) format("truetype");
+  font-family: "Calluna";
+  src: url(fonts/calluna-regular.ttf) format("truetype");
 }
 
 body {
   font-size: 1em;
-  font-family: "ComicSansMS3", sans-serif;
+  font-family: "Calluna", sans-serif;
   font-weight: lighter;
   color: white;
   margin-right: 5%;
