@@ -17,6 +17,7 @@ body {
   background-repeat: no-repeat no-repeat;
   background-position: 25% 35%;
   background-size: cover;
+  padding: 20px 0;
 }
 
 h1 {
@@ -39,6 +40,18 @@ ul {
   font-size: 1em;
   font-weight: lighter;
 }  
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 
 
 
