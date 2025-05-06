@@ -11,18 +11,17 @@
 
     <style>
     .container {
-      width: 60%;
-      margin: 0 auto;
+      max-width: 1200px;   /* Prevents the content from getting too wide */
+      width: 80%;          /* Leaves ~10% space on both sides by default */
+      margin: 0 auto;      /* Center horizontally */
     }
 
-    /* Make it full-width on small screens (phones, etc.) */
     @media (max-width: 768px) {
       .container {
-        width: 90%;
+        width: 90%;        /* On smaller screens, use more space */
       }
     }
 
-    /* Optional: add some padding for better readability */
     body {
       padding: 20px 0;
     }
