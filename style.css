@@ -428,3 +428,137 @@ main{grid-row:2;min-height:0;overflow:hidden}
 .section-heading{gap:0}
 #organisation.site-panel{display:block}
 .organisation-list{max-width:760px}
+
+/* Mobile scrolling fix for independently scrollable panels */
+html{
+  height:100%;
+  height:100dvh;
+  overflow:hidden;
+}
+body{
+  height:100%;
+  height:100dvh;
+  min-height:0;
+  overflow:hidden;
+}
+main,
+.page-stage{
+  min-height:0;
+  height:100%;
+}
+.site-panel{
+  min-height:0;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  touch-action:pan-y;
+  overscroll-behavior-y:contain;
+  overscroll-behavior-x:none;
+  padding-bottom:max(50px,calc(28px + env(safe-area-inset-bottom)));
+}
+
+@media(max-width:760px){
+  body{
+    grid-template-rows:62px minmax(0,1fr);
+  }
+  .site-header{
+    height:62px;
+  }
+  main,
+  .page-stage{
+    height:calc(100dvh - 62px);
+    max-height:calc(100dvh - 62px);
+  }
+  .site-panel{
+    height:100%;
+    max-height:100%;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    touch-action:pan-y;
+    padding-bottom:max(42px,calc(24px + env(safe-area-inset-bottom)));
+  }
+}
+
+/* Fallback for browsers without dynamic viewport units */
+@supports not (height:100dvh){
+  html,body{height:100%}
+  @media(max-width:760px){
+    main,.page-stage{height:calc(100vh - 62px);max-height:calc(100vh - 62px)}
+  }
+}
+
+@media(max-width:760px){
+  @supports not (height:100dvh){
+    html,body{height:var(--app-height,100vh)}
+    main,.page-stage{height:calc(var(--app-height,100vh) - 62px);max-height:calc(var(--app-height,100vh) - 62px)}
+  }
+}
+
+/* Mobile scrolling fix and consistent contact footer */
+html,body{
+  width:100%;
+  height:100%;
+  height:100dvh;
+  overflow:hidden;
+}
+body{
+  min-height:0;
+  grid-template-rows:72px minmax(0,1fr);
+}
+.site-header{
+  position:relative;
+  top:auto;
+  height:72px;
+}
+main,
+.page-stage{
+  min-width:0;
+  min-height:0;
+  height:100%;
+}
+.site-panel{
+  top:0;
+  bottom:0;
+  min-height:0;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  touch-action:pan-y;
+  overscroll-behavior-y:contain;
+  padding-bottom:max(50px,calc(28px + env(safe-area-inset-bottom)));
+}
+.panel-footer{
+  width:100%;
+  grid-column:1 / -1;
+  align-self:end;
+  order:99;
+}
+
+@media(max-width:760px){
+  body{grid-template-rows:62px minmax(0,1fr)}
+  .site-header{height:62px}
+  main,.page-stage{height:100%;min-height:0}
+  .site-panel{
+    inset:0;
+    height:100%;
+    max-height:100%;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    touch-action:pan-y;
+    padding-top:30px;
+    padding-bottom:max(42px,calc(24px + env(safe-area-inset-bottom)));
+  }
+  #main.site-panel{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:stretch;
+  }
+  #main .intro-copy{order:1;flex:0 0 auto}
+  #main .portrait-wrap{order:2;flex:0 0 auto}
+  #main .panel-footer{order:3;flex:0 0 auto}
+  .panel-footer{
+    margin-top:32px;
+    padding-top:20px;
+  }
+}

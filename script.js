@@ -5,6 +5,10 @@
   const menu = document.querySelector('.nav-links');
   const toggle = document.querySelector('.nav-toggle');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const setViewportHeight = () => document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+  setViewportHeight();
+  addEventListener('resize', setViewportHeight, {passive:true});
+  addEventListener('orientationchange', setViewportHeight, {passive:true});
   const scrollTopControl = document.getElementById('scroll-top-control');
   let current = 'main';
   let moving = false;
