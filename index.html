@@ -1,54 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Maximilian Hans</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  </head>
-  
-  <body>
-    <div class="container">
-    <h1>Homepage of Maximilian Hans</h1>
-    <figure>
-      <img src="https://maximilianhans.github.io/images/NetleyAbbey_cropped.png" alt=""
-   width="300">
-     <!--<figcaption>Photo credit: <a href="https://friedl.app.uni-regensburg.de/">Stefan Friedl</a></figcaption>-->
-   </figure>
-    <p>
-      I am a PhD student of <a href="https://dkasprowski.github.io/">Daniel Kasprowski</a> at the University of Southampton. Before that, I was based in Bonn, working with <a href="https://people.mpim-bonn.mpg.de/teichner/Math/">Peter Teichner</a>. My research interests lie primarily at the intersection of geometric topology and homotopy theory. This includes spaces of embeddings and diffeomorphisms, 4-manifolds, surgery theory, K- and L-Theory, and cobordism categories.
-    </p>
-    <h2>Articles:
-    </h2>
-    <ul>
-      <li> <a href="https://www.cambridge.org/core/journals/glasgow-mathematical-journal/article/note-on-duality-and-the-atiyahhirzebruch-spectral-sequence/ECD3857CCB8B2E69C9701E4F10039E55">A note on Duality and the Atiyah–Hirzebruch spectral sequence</a> (<a href="https://arxiv.org/abs/2507.18250">arXiv</a>), to appear in <a href="https://www.cambridge.org/core/journals/glasgow-mathematical-journal">Glasgow Mathematical Journal</a></li>
-    </ul>
-    <p>
-    <h2>Projects:
-    </h2>
-    <ul>   
-      <li> <i>A bridge between classical and modified surgery</i>: I investigate a direct comparison between classical and modified surgery theory, to compare equivalence relations (homotopy equivalence, stable homeomorphism, and homeomorphism) on manifolds. This includes rigidity, stable rigidity results, as well as cancellation results. </li>
-      <li> <i>Group actions on highly connected manifolds</i>: In joint work with <a href="https://oleksandrkharchenko.gitlab.io/">Oleksandr Kharchenko</a>, we are working on a diffeomorphism classification of even-dimensional manifolds whose universal covering is highly connected, while a non-trivial fundamental group is present. </li>
-    </ul>
-    <p>
-    <h2>Here are some notes I have written covering various topics.
-    </h2>
-    <ul>
-      <li><a href="/pdfs/Poincare_categories.pdf">Poincaré categories</a>.</li>
-      <li><a href="/pdfs/A_Light_Bulb_Theorem_for_Multi-Disks.pdf">A Light Bulb Theorem for Multi-Disks</a>.</li>
-      <li><a href="/pdfs/The_Kervaire_Invariant_and_a_non-smoothable_manifold.pdf">The Kervaire Invariant and a non-smoothable Manifold</a>.</li>
-      <li><a href="/pdfs/The_Pontrjagin_Thom_Construction.pdf">The Pontrjagin–Thom Construction</a>.</li>
-      <li><a href="/pdfs/The_Birman_Craggs_Homomorphisms.pdf">The Birman–Craggs Homomorphisms</a>.</li>
-      <!--<li><a href="/pdfs/The_Rokhlin_Invariant_and_Homology_Cobordism.pdf">The Rokhlin Invariant and Homology Cobordism</a>.</li>-->
-      <li><a href="/pdfs/Symplectic_Representation_of_the_Mapping_Class_Group.pdf">Symplectic Representation of the Mapping Class Group</a>.</li>
-    </ul>
-    <p>
-      Contact: maximilian.hans(at)soton.ac.uk
-    </br>
-      Office: Room 8035, B54, West Highfield Campus, University Road, SO17 1BJ
-    </p>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homepage of Maximilian Hans">
+  <title>Maximilian Hans</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        processEscapes: true
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Maximilian Hans, home">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span>Maximilian Hans</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#notes">Notes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="intro shell reveal" id="home">
+      <div class="intro-copy">
+        <h1>Homepage of Maximilian Hans</h1>
+        <p>I am a PhD student of <a href="https://dkasprowski.github.io/">Daniel Kasprowski</a> at the University of Southampton. Before that, I was based in Bonn, working with <a href="https://people.mpim-bonn.mpg.de/teichner/Math/">Peter Teichner</a>. My research interests lie primarily at the intersection of geometric topology and homotopy theory. This includes spaces of embeddings and diffeomorphisms, 4-manifolds, surgery theory, K- and L-Theory, and cobordism categories.</p>
+      </div>
+      <figure class="portrait-wrap">
+        <img src="images/NetleyAbbey_cropped.png" alt="" width="300">
+      </figure>
+    </section>
+
+    <section class="section shell reveal" id="research">
+      <div class="section-heading"><span class="section-number">01</span><h2>Research</h2></div>
+      <div class="content-block">
+        <h3>Articles:</h3>
+        <article class="paper-card interactive-card">
+          <h4><a href="https://www.cambridge.org/core/journals/glasgow-mathematical-journal/article/note-on-duality-and-the-atiyahhirzebruch-spectral-sequence/ECD3857CCB8B2E69C9701E4F10039E55">A note on Duality and the Atiyah–Hirzebruch spectral sequence</a></h4>
+          <p>(<a href="https://arxiv.org/abs/2507.18250">arXiv</a>), to appear in <a href="https://www.cambridge.org/core/journals/glasgow-mathematical-journal">Glasgow Mathematical Journal</a></p>
+        </article>
+      </div>
+      <div class="content-block projects">
+        <h3>Projects:</h3>
+        <article class="project-row interactive-card"><span class="project-number">01</span><p><i>A bridge between classical and modified surgery</i>: I investigate a direct comparison between classical and modified surgery theory, to compare equivalence relations (homotopy equivalence, stable homeomorphism, and homeomorphism) on manifolds. This includes rigidity, stable rigidity results, as well as cancellation results.</p></article>
+        <article class="project-row interactive-card"><span class="project-number">02</span><p><i>Group actions on highly connected manifolds</i>: In joint work with <a href="https://oleksandrkharchenko.gitlab.io/">Oleksandr Kharchenko</a>, we are working on a diffeomorphism classification of even-dimensional manifolds whose universal covering is highly connected, while a non-trivial fundamental group is present.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="teaching">
+      <div class="section-heading"><span class="section-number">02</span><h2>Teaching</h2></div>
+      <div class="teaching-list">
+        <div class="teaching-entry seminar-entry">
+          <h3>Reading group on $\infty$-categories</h3>
+          <a href="pdfs/Infinity_Categories_Seminar.pdf">Schedule <span>↗</span></a>
+        </div>
+        <div class="teaching-entry">
+          <h3>Teaching Assistant</h3>
+          <span>Southampton · 2024–2026</span>
+        </div>
+        <div class="teaching-entry">
+          <h3>Tutor</h3>
+          <span>Bonn · 2021–2024</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="notes">
+      <div class="section-heading"><span class="section-number">03</span><h2>Notes</h2></div>
+      <div class="notes-list">
+        <a href="pdfs/Poincare_categories.pdf"><span>01</span><strong>Poincaré categories.</strong><b>↗</b></a>
+        <a href="pdfs/A_Light_Bulb_Theorem_for_Multi-Disks.pdf"><span>02</span><strong>A Light Bulb Theorem for Multi-Disks.</strong><b>↗</b></a>
+        <a href="pdfs/The_Kervaire_Invariant_and_a_non-smoothable_manifold.pdf"><span>03</span><strong>The Kervaire Invariant and a non-smoothable Manifold.</strong><b>↗</b></a>
+        <a href="pdfs/The_Pontrjagin_Thom_Construction.pdf"><span>04</span><strong>The Pontrjagin–Thom Construction.</strong><b>↗</b></a>
+        <a href="pdfs/The_Birman_Craggs_Homomorphisms.pdf"><span>05</span><strong>The Birman–Craggs Homomorphisms.</strong><b>↗</b></a>
+        <a href="pdfs/Symplectic_Representation_of_the_Mapping_Class_Group.pdf"><span>06</span><strong>Symplectic Representation of the Mapping Class Group.</strong><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>Contact: maximilian.hans(at)soton.ac.uk<br>Office: Room 8035, B54, West Highfield Campus, University Road, SO17 1BJ</p>
+    <a href="#home" aria-label="Back to top">↑</a>
+  </footer>
+</body>
 </html>
